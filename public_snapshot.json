@@ -4,18 +4,18 @@
   "repo_url": "",
   "public_api_url": "https://cli-guard.onrender.com",
   "ledger_repo": "ahmedharib/cli-guard-ledger",
-  "generated_at_utc": "2026-11-24T18:38:47.453263+00:00",
+  "generated_at_utc": "2026-11-24T18:40:08.956610+00:00",
   "provider": "meta",
   "model": "muse-spark-1.2",
   "last_seq": "147289077",
   "metrics": {
-    "total_scanned": 36,
+    "total_scanned": 57,
     "malicious": 0,
-    "suspicious": 2,
-    "benign": 34,
-    "ledger_commitments": 3,
+    "suspicious": 3,
+    "benign": 54,
+    "ledger_commitments": 4,
     "ots_confirmed": 0,
-    "ots_pending": 3,
+    "ots_pending": 4,
     "ots_errors": 0
   },
   "findings": [
@@ -18070,6 +18070,16 @@
   ],
   "ledger": [
     {
+      "finding_id": "20261124T184001Z_0adf0b1cbbc4",
+      "commitment_sha256": "f8e1b80c875196d96162aa591bc668d1f91910a311933d238c4f2bd5816a5275",
+      "detected_at_utc": "2026-11-24T18:40:01.493397+00:00",
+      "verdict": "suspicious",
+      "risk_score": 100,
+      "ots_file": "20261124T184001Z_0adf0b1cbbc4.ots",
+      "ots_status": "pending",
+      "status": "committed"
+    },
+    {
       "finding_id": "20261124T183839Z_56ad536bfe26",
       "commitment_sha256": "2517632f0640348d39942819a8705f0f38932296f04739025db9d1f28b97fb38",
       "detected_at_utc": "2026-11-24T18:38:39.226192+00:00",
@@ -18101,6 +18111,363 @@
     }
   ],
   "scanned_packages": [
+    {
+      "ecosystem": "npm",
+      "name": "@elementor/editor-canvas",
+      "version": "4.5.0-1219",
+      "integrity": "sha512-uZSwdn9n2yOMQJo+ul61ToVQU+MGhu8JtvFDNsiLYfhDMvxG69VVU0PfcsMMFR/532eO7+RJhtuu4JatQnXRWw==",
+      "published_at": "2026-11-24T18:35:12.837000+00:00",
+      "scanned_at": "2026-11-24T18:39:25.881458+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "yedogu",
+      "version": "0.0.0-stage",
+      "integrity": "sha512-bE7qJfgyKJ2qcnsZL6J3mOoBpCOl+4k66BiGV3AybnPsJNdgEP/5s5JgOMwzVWHZ38r9IqMDIwGiWkJosK8StA==",
+      "published_at": "2026-11-24T18:33:06.594000+00:00",
+      "scanned_at": "2026-11-24T18:39:21.011458+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "yedogu",
+      "version": "1.0.0",
+      "integrity": "sha512-nIQuncODavmnrW5SKk4HHZvIDG01sxYFd2jKLdsMZp1sOA4JvYp5/dlw6TXd/VlCCXQkyS52/erGUcYZgYYw6A==",
+      "published_at": "2026-11-24T18:35:13.941000+00:00",
+      "scanned_at": "2026-11-24T18:39:20.115772+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 25,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@nocopypaste/vue-grid-mcp",
+      "version": "0.4.3",
+      "integrity": "sha512-/Xs1n345/Oz0Hvr5YKY+N51K1qzaKIjvRYEbhuOPcvygzYVn50soVDSsqE59bigxcu5bmNgpBhkaHePDLKPLgA==",
+      "published_at": "2026-11-24T17:59:58.086000+00:00",
+      "scanned_at": "2026-11-24T18:39:17.058920+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 10,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@agentstats/sdk",
+      "version": "0.6.0",
+      "integrity": "sha512-4IA1kr6XfLvg3I8ARyq/3l2B/Eq87C1tnXVRwIk21mEWEGogke3eOVe9OljltUVNmOqucWt5F5dnx4oCxrrMFg==",
+      "published_at": "2026-11-24T18:35:14.480000+00:00",
+      "scanned_at": "2026-11-24T18:39:16.333881+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@nocopypaste/vue-grid-mcp",
+      "version": "0.5.0",
+      "integrity": "sha512-dp2CTozN8GN4QnswA1NQU2K7eZYDjmXZUNc3R1zgUPpfV1/kB9hqyJRTrYPTaZVbTTef4qOm5P038WyWjiFuaA==",
+      "published_at": "2026-11-24T18:35:14.057000+00:00",
+      "scanned_at": "2026-11-24T18:39:15.254931+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 10,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@accounter/opcn1214-generator",
+      "version": "0.1.1-alpha-20261124183137-5cf9a6e89f1522eddeb5c1f4fb3b96148055620e",
+      "integrity": "sha512-lt1TpS8gkuuUuENpOmnihX1DNbXCcU3vajuDScurgXL/WY2i89pM974ro0D8uisKFahdG0Zdco7aNpNwMvsaFg==",
+      "published_at": "2026-11-24T18:38:47.375000+00:00",
+      "scanned_at": "2026-11-24T18:39:15.239533+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 20,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@elementor/editor-current-user",
+      "version": "4.5.0-1219",
+      "integrity": "sha512-AodYYGi7d5zCmppYWc2aqOW0XSfxhj6mMGNT+4pnmuYL9+N1+edXaNrRwVS//DMOfezGNMEMN3clp7R6iLnnuQ==",
+      "published_at": "2026-11-24T18:35:12.628000+00:00",
+      "scanned_at": "2026-11-24T18:39:13.160269+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@diagc/core",
+      "version": "1.20.0",
+      "integrity": "sha512-aUcHTLx5TDzuK9M2VVIltDjxfyR/Svvhwb+rXbr0eKIpkcAod3VK2UmVnyyHzakKW072mf8Apo1e/8/yK0VvUQ==",
+      "published_at": "2026-11-24T18:35:13.646000+00:00",
+      "scanned_at": "2026-11-24T18:39:13.148494+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@sisense/sdk-pivot-ui",
+      "version": "2.41.0",
+      "integrity": "sha512-FteTlC5VjeFi5ajPMPqBauRDtXSpyYBP8nL6yvs5t0lYrBJ8Ylum0qJLCOzVx7711/l1dZPJr4nukgHRt0LrHw==",
+      "published_at": "2026-11-24T18:35:11.547000+00:00",
+      "scanned_at": "2026-11-24T18:39:10.876861+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 30,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@lensmcp/vite-plugin",
+      "version": "1.26.30",
+      "integrity": "sha512-xwtEzaLqiHobW8fRUbQdWnRDWHA0mKEumLRYfYJVeN/ZWgU651wbARWxoCCp9ZicS2xrPPQ+UiVtqgu9ZVIN1A==",
+      "published_at": "2026-11-24T18:35:12.332000+00:00",
+      "scanned_at": "2026-11-24T18:39:08.586505+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 20,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oktis-works/web",
+      "version": "0.17.1",
+      "integrity": "sha512-DR3Ld/vDlzyCd8vfabKQywBO+uAn31IzV1tdzwLSuFvtTWwpabY1TROY5VLl7HorL/5sgd8g6f8NX256AOGERQ==",
+      "published_at": "2026-11-24T18:35:11.388000+00:00",
+      "scanned_at": "2026-11-24T18:39:08.385269+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 10,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oktis-works/validation",
+      "version": "0.9.1",
+      "integrity": "sha512-ZOY5Yhi17CO75p4QTHlPqnetnMCyuY41Y9MaCku9O6Y72VBy+aMPHRQAmGu1StO/ixKQ12B0VKRFqqBZYReW5g==",
+      "published_at": "2026-11-24T18:35:12.342000+00:00",
+      "scanned_at": "2026-11-24T18:39:08.051913+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@accounter/opcn1214-generator",
+      "version": "0.1.1-alpha-20261124183545-8111ef8208b4e7303da323c534a7b03a5edc8127",
+      "integrity": "sha512-VdX+0JH9JLnTjceEo+HyFXGYZsHMLfrNe+AiPy8MCsjkU+OI615G8rdZu4TwwTb0x/ixeEwRCUTdAkMdB1O9GA==",
+      "published_at": "2026-11-24T18:38:51.957000+00:00",
+      "scanned_at": "2026-11-24T18:39:08.039961+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 20,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@accounter/server",
+      "version": "0.3.0-alpha-20261124183028-6ab5a8571452267c14457d02345de1d8e7c45c7f",
+      "integrity": "sha512-eVp0EGxxY6feL2xziuByHc4o+qa9lcBvt/dxP/mqgXbpWVH29f/hqXioHThEWtJnjLfx+OewqY0HVwW20pliYg==",
+      "published_at": "2026-11-24T18:35:54.119000+00:00",
+      "scanned_at": "2026-11-24T18:39:08.020130+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 30,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "dsh-compaction-weave",
+      "version": "0.5.3-hotfix.1",
+      "integrity": "sha512-5qodk7ryAYQZmJ4xOr1bv7SjvW1uovWYSusqcCidoAmwBy58LTxG/1BBYoCrmuJb/yDLINMFCsVpALF282pREw==",
+      "published_at": "2026-11-24T18:35:11.426000+00:00",
+      "scanned_at": "2026-11-24T18:39:02.382425+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 20,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@clerk/localizations",
+      "version": "4.26.4-canary.v20261124182752",
+      "integrity": "sha512-eai54hOqKFvYJSm1dwZCx11k0A7zMROYsjWQCCHdLd3IbLGd8BMWSjMIuurmc8GTzsH6tG7+kVHKOQEIa4IPFw==",
+      "published_at": "2026-11-24T18:35:06.983000+00:00",
+      "scanned_at": "2026-11-24T18:38:57.949464+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@itwin/appui-abstract",
+      "version": "5.15.2",
+      "integrity": "sha512-BCoU6IA/CX0Su7IW/wOzIF1jIh5fb4b5Vcdh7gzdVZHDWoja25SZ2EYcVqf47LH/ZASclZI5zKM22e88M7ACvA==",
+      "published_at": "2026-11-24T18:35:08.302000+00:00",
+      "scanned_at": "2026-11-24T18:38:55.474234+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "untell",
+      "version": "0.0.0-stage",
+      "integrity": "sha512-L/+XArHyJHMTR765Ug7jlIUPy+foE+JrvB5bwOy9Fr51oSXdcog2N47CbxhwZB40RziUvHirX1NeLnDGE9/oOQ==",
+      "published_at": "2026-11-24T18:35:10.396000+00:00",
+      "scanned_at": "2026-11-24T18:38:55.395341+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@ingeniomaps/cauce",
+      "version": "0.124.0",
+      "integrity": "sha512-nFm2zcEIrSPyZ83G9XeZcBWIbaWkwB0WAEOM/m4wzlXsNa7xzFQY/VcFRzD/LhDL08bMM/eFp5v72c1iWPhwlA==",
+      "published_at": "2026-11-24T18:35:07.060000+00:00",
+      "scanned_at": "2026-11-24T18:38:55.328641+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 35,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "[redacted:20261124T183839Z_56ad536bfe26]",
+      "version": "*",
+      "integrity": "sha512-FxSsdFaMfZbar/5vOi4C8Xj2Oy2RnqfT5g7rzbscuUb+Vy5tO9dHPPcwEik1j9FyaTPPCTZkZq1AolSclBV8hw==",
+      "published_at": "2026-11-24T18:35:06.047000+00:00",
+      "scanned_at": "2026-11-24T18:38:54.995417+00:00",
+      "scan_source": "monitor",
+      "verdict": "suspicious",
+      "risk_score": 40,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Salted SHA-256 commitment pending independent OSV/npm confirmation.",
+      "finding_id": "20261124T183839Z_56ad536bfe26"
+    },
     {
       "ecosystem": "npm",
       "name": "@domicile-desktop/manganese-bar-module-tray",
@@ -18717,11 +19084,37 @@
   ],
   "logs": [
     {
+      "ts_utc": "2026-11-24T18:40:08.190483+00:00",
+      "level": "warning",
+      "message": "FLAGGED SUSPICIOUS curb.js@1.27.1 (risk=100) -> commit=f8e1b80c8751... ots=pending",
+      "finding_id": "20261124T184001Z_0adf0b1cbbc4",
+      "package": "curb.js@1.27.1",
+      "verdict": "suspicious",
+      "risk_score": 100,
+      "ots_status": "pending"
+    },
+    {
+      "ts_utc": "2026-11-24T18:39:14.913283+00:00",
+      "level": "info",
+      "message": "[dim]Skipped astro-link-favicons@2.0.0: Failed downloading tarball (404): https://registry.npmjs.org/astro-link-favicons/-/astro-link-favicons-2.0.0.tgz[/dim]"
+    },
+    {
+      "ts_utc": "2026-11-24T18:38:54.880686+00:00",
+      "level": "info",
+      "message": "[cyan]Ledger pushed[/cyan] to `ahmedharib/cli-guard-ledger` (3 file(s)).",
+      "repo": "ahmedharib/cli-guard-ledger",
+      "uploaded": [
+        "ledger.jsonl",
+        "ots/20261124T183839Z_56ad536bfe26.ots",
+        "public_snapshot.json"
+      ]
+    },
+    {
       "ts_utc": "2026-11-24T18:38:45.276724+00:00",
       "level": "warning",
-      "message": "FLAGGED SUSPICIOUS @c9up/lumen@0.1.4 (risk=40) -> commit=2517632f0640... ots=pending",
+      "message": "FLAGGED SUSPICIOUS [redacted:20261124T183839Z_56ad536bfe26] (risk=40) -> commit=2517632f0640... ots=pending",
       "finding_id": "20261124T183839Z_56ad536bfe26",
-      "package": "@c9up/lumen@0.1.4",
+      "package": "[redacted:20261124T183839Z_56ad536bfe26]",
       "verdict": "suspicious",
       "risk_score": 40,
       "ots_status": "pending"
