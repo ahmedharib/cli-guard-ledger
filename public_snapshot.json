@@ -4,18 +4,18 @@
   "repo_url": "",
   "public_api_url": "https://cli-guard.onrender.com",
   "ledger_repo": "ahmedharib/cli-guard-ledger",
-  "generated_at_utc": "2026-11-24T18:38:16.855691+00:00",
+  "generated_at_utc": "2026-11-24T18:38:32.600207+00:00",
   "provider": "meta",
   "model": "muse-spark-1.2",
   "last_seq": "147289077",
   "metrics": {
-    "total_scanned": 31,
+    "total_scanned": 33,
     "malicious": 0,
-    "suspicious": 0,
-    "benign": 31,
-    "ledger_commitments": 1,
+    "suspicious": 1,
+    "benign": 32,
+    "ledger_commitments": 2,
     "ots_confirmed": 0,
-    "ots_pending": 1,
+    "ots_pending": 2,
     "ots_errors": 0
   },
   "findings": [
@@ -18070,6 +18070,16 @@
   ],
   "ledger": [
     {
+      "finding_id": "20261124T183823Z_5380850fa30b",
+      "commitment_sha256": "3c62b2ec36ae5b6eeda323d1d32389de830b3947ca263fd49405244fbcf8f55a",
+      "detected_at_utc": "2026-11-24T18:38:23.115599+00:00",
+      "verdict": "suspicious",
+      "risk_score": 35,
+      "ots_file": "20261124T183823Z_5380850fa30b.ots",
+      "ots_status": "pending",
+      "status": "committed"
+    },
+    {
       "finding_id": "20261124T183807Z_00dc66e23aa7",
       "commitment_sha256": "afe84147d53eb131fa5c43d21815bb3af3dc149baf0e66fe74ab4687ab6a38ee",
       "detected_at_utc": "2026-11-24T18:38:07.452724+00:00",
@@ -18081,6 +18091,41 @@
     }
   ],
   "scanned_packages": [
+    {
+      "ecosystem": "npm",
+      "name": "gridcraft-embed",
+      "version": "0.1.13",
+      "integrity": "sha512-GAMiw9WNr7jC7BAIe9x/eKOhgaFX4rTetAI2mak4kF3UWJrZey5kCtrCQWeGIDlys9cJ8Zz/bOwtVCnOv673Ug==",
+      "published_at": "2026-11-24T18:34:55.101000+00:00",
+      "scanned_at": "2026-11-24T18:38:22.925009+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 0,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "[redacted:20261124T183807Z_00dc66e23aa7]",
+      "version": "*",
+      "integrity": "sha512-bM9tlP03WkHnZ3C8xNdY4yj4nIms+CaZEC3DqLYJxJgKZybxhrbVWJ0nq3Y2kvjmRdh6BTw3ZTQSuvuiY4Gedg==",
+      "published_at": "2026-11-24T18:34:52.806000+00:00",
+      "scanned_at": "2026-11-24T18:38:22.795543+00:00",
+      "scan_source": "monitor",
+      "verdict": "suspicious",
+      "risk_score": 90,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff",
+        "layer2_triage_llm"
+      ],
+      "summary": "Salted SHA-256 commitment pending independent OSV/npm confirmation.",
+      "finding_id": "20261124T183807Z_00dc66e23aa7"
+    },
     {
       "ecosystem": "npm",
       "name": "@domicile-desktop/manganese-bar-module-tray",
@@ -18611,11 +18656,32 @@
   ],
   "logs": [
     {
+      "ts_utc": "2026-11-24T18:38:29.409632+00:00",
+      "level": "warning",
+      "message": "FLAGGED SUSPICIOUS @elementor/editor-app-bar@4.5.0-1219 (risk=35) -> commit=3c62b2ec36ae... ots=pending",
+      "finding_id": "20261124T183823Z_5380850fa30b",
+      "package": "@elementor/editor-app-bar@4.5.0-1219",
+      "verdict": "suspicious",
+      "risk_score": 35,
+      "ots_status": "pending"
+    },
+    {
+      "ts_utc": "2026-11-24T18:38:22.701396+00:00",
+      "level": "info",
+      "message": "[cyan]Ledger pushed[/cyan] to `ahmedharib/cli-guard-ledger` (3 file(s)).",
+      "repo": "ahmedharib/cli-guard-ledger",
+      "uploaded": [
+        "ledger.jsonl",
+        "ots/20261124T183807Z_00dc66e23aa7.ots",
+        "public_snapshot.json"
+      ]
+    },
+    {
       "ts_utc": "2026-11-24T18:38:15.726211+00:00",
       "level": "warning",
-      "message": "FLAGGED SUSPICIOUS @cortexkit/pi-magic-context@0.49.75 (risk=90) -> commit=afe84147d53e... ots=pending",
+      "message": "FLAGGED SUSPICIOUS [redacted:20261124T183807Z_00dc66e23aa7] (risk=90) -> commit=afe84147d53e... ots=pending",
       "finding_id": "20261124T183807Z_00dc66e23aa7",
-      "package": "@cortexkit/pi-magic-context@0.49.75",
+      "package": "[redacted:20261124T183807Z_00dc66e23aa7]",
       "verdict": "suspicious",
       "risk_score": 90,
       "ots_status": "pending"
