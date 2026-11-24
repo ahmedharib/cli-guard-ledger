@@ -4,18 +4,18 @@
   "repo_url": "",
   "public_api_url": "https://cli-guard.onrender.com",
   "ledger_repo": "ahmedharib/cli-guard-ledger",
-  "generated_at_utc": "2026-11-24T18:38:32.600207+00:00",
+  "generated_at_utc": "2026-11-24T18:38:47.453263+00:00",
   "provider": "meta",
   "model": "muse-spark-1.2",
   "last_seq": "147289077",
   "metrics": {
-    "total_scanned": 33,
+    "total_scanned": 36,
     "malicious": 0,
-    "suspicious": 1,
-    "benign": 32,
-    "ledger_commitments": 2,
+    "suspicious": 2,
+    "benign": 34,
+    "ledger_commitments": 3,
     "ots_confirmed": 0,
-    "ots_pending": 2,
+    "ots_pending": 3,
     "ots_errors": 0
   },
   "findings": [
@@ -18070,6 +18070,16 @@
   ],
   "ledger": [
     {
+      "finding_id": "20261124T183839Z_56ad536bfe26",
+      "commitment_sha256": "2517632f0640348d39942819a8705f0f38932296f04739025db9d1f28b97fb38",
+      "detected_at_utc": "2026-11-24T18:38:39.226192+00:00",
+      "verdict": "suspicious",
+      "risk_score": 40,
+      "ots_file": "20261124T183839Z_56ad536bfe26.ots",
+      "ots_status": "pending",
+      "status": "committed"
+    },
+    {
       "finding_id": "20261124T183823Z_5380850fa30b",
       "commitment_sha256": "3c62b2ec36ae5b6eeda323d1d32389de830b3947ca263fd49405244fbcf8f55a",
       "detected_at_utc": "2026-11-24T18:38:23.115599+00:00",
@@ -18091,6 +18101,57 @@
     }
   ],
   "scanned_packages": [
+    {
+      "ecosystem": "npm",
+      "name": "@domicile-desktop/manganese-bar-module-tray",
+      "version": "0.0.0-alpha-183d286a9168",
+      "integrity": "sha512-av+2q8wXxGkF4jbAVZ1EvDpAh+NKq+y/h1WCpjcu7cjWGoEBuponBLrtXuziqY82b6OuYnSdw4rFQ4qRuEcYbA==",
+      "published_at": "2026-11-24T18:17:04.856000+00:00",
+      "scanned_at": "2026-11-24T18:38:39.208556+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 5,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@accounter/server",
+      "version": "0.3.0-alpha-20261124182823-e7cc110d0f89a749032b8edebcdeeed545792057",
+      "integrity": "sha512-NPMApuST+gXNnExoUU6dR+Y1GFOCA0F4UkWoWFa3jYp8TjtwPLSf9u3H6tdJv2JSFKvh2LvwfVBwUxLRN1YYrg==",
+      "published_at": "2026-11-24T18:36:15.920000+00:00",
+      "scanned_at": "2026-11-24T18:38:39.192073+00:00",
+      "scan_source": "monitor",
+      "verdict": "benign",
+      "risk_score": 30,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Clean static AST, metadata, and advisory check.",
+      "finding_id": ""
+    },
+    {
+      "ecosystem": "npm",
+      "name": "[redacted:20261124T183823Z_5380850fa30b]",
+      "version": "*",
+      "integrity": "sha512-iPYOmCjA2oqnK5QQ8FqYIlNJ5APjxv7cimzgGueNjV2az9zS04Okk5WDXZfXeE5lk2XWFjL6wLwO3BNHo+kcfg==",
+      "published_at": "2026-11-24T18:35:01.522000+00:00",
+      "scanned_at": "2026-11-24T18:38:39.144033+00:00",
+      "scan_source": "monitor",
+      "verdict": "suspicious",
+      "risk_score": 35,
+      "layers_run": [
+        "layer0_metadata_advisories",
+        "layer1_ast_diff"
+      ],
+      "summary": "Salted SHA-256 commitment pending independent OSV/npm confirmation.",
+      "finding_id": "20261124T183823Z_5380850fa30b"
+    },
     {
       "ecosystem": "npm",
       "name": "gridcraft-embed",
@@ -18656,11 +18717,37 @@
   ],
   "logs": [
     {
+      "ts_utc": "2026-11-24T18:38:45.276724+00:00",
+      "level": "warning",
+      "message": "FLAGGED SUSPICIOUS @c9up/lumen@0.1.4 (risk=40) -> commit=2517632f0640... ots=pending",
+      "finding_id": "20261124T183839Z_56ad536bfe26",
+      "package": "@c9up/lumen@0.1.4",
+      "verdict": "suspicious",
+      "risk_score": 40,
+      "ots_status": "pending"
+    },
+    {
+      "ts_utc": "2026-11-24T18:38:39.169524+00:00",
+      "level": "info",
+      "message": "[dim]Skipped @arcgis/core@5.2.9: Tarball exceeds max file count (5000).[/dim]"
+    },
+    {
+      "ts_utc": "2026-11-24T18:38:39.142400+00:00",
+      "level": "info",
+      "message": "[cyan]Ledger pushed[/cyan] to `ahmedharib/cli-guard-ledger` (3 file(s)).",
+      "repo": "ahmedharib/cli-guard-ledger",
+      "uploaded": [
+        "ledger.jsonl",
+        "ots/20261124T183823Z_5380850fa30b.ots",
+        "public_snapshot.json"
+      ]
+    },
+    {
       "ts_utc": "2026-11-24T18:38:29.409632+00:00",
       "level": "warning",
-      "message": "FLAGGED SUSPICIOUS @elementor/editor-app-bar@4.5.0-1219 (risk=35) -> commit=3c62b2ec36ae... ots=pending",
+      "message": "FLAGGED SUSPICIOUS [redacted:20261124T183823Z_5380850fa30b] (risk=35) -> commit=3c62b2ec36ae... ots=pending",
       "finding_id": "20261124T183823Z_5380850fa30b",
-      "package": "@elementor/editor-app-bar@4.5.0-1219",
+      "package": "[redacted:20261124T183823Z_5380850fa30b]",
       "verdict": "suspicious",
       "risk_score": 35,
       "ots_status": "pending"
