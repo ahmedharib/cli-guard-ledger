@@ -1,0 +1,1 @@
+{"finding_id": "20261124T183807Z_00dc66e23aa7", "commitment_sha256": "afe84147d53eb131fa5c43d21815bb3af3dc149baf0e66fe74ab4687ab6a38ee", "detected_at_utc": "2026-11-24T18:38:07.452724+00:00", "verdict": "suspicious", "risk_score": 90, "ots_file": "20261124T183807Z_00dc66e23aa7.ots", "ots_status": "pending", "status": "committed"}
